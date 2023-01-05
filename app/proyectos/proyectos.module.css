@@ -4,19 +4,25 @@
 }
 
 .proyectos_grid {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: space-between;
-    justify-content: flex-start;
-    row-gap: 10px;
-    height: 180vw;
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "chat     chat"
+        "pastry   tenzies"
+        "pastry   profile"
+        "picture  profile"
+        "picture  color_picker"
+        "supplies supplies"
+        "quiz     .";
     width: 100%;
+    gap: 10px;
     margin: auto;
 }
 
 .images {
-    width: 46%;
-    height: fit-content;
+    width: 100%;
+    height: auto;
     display: block;
     object-fit: contain;
     border-radius: 5px;
@@ -26,17 +32,52 @@
     border: 1px dotted var(--gold);
 }
 
-@media(min-width:660px) {
+@media(min-width:900px) {
     .proyectos_grid {
-        height: calc((100vw / 660 * 806) + 30);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: min-content;
+        grid-template-areas: 
+        "chat     chat          tenzies"
+        "pastry   supplies      supplies"
+        "pastry   profile       color_picker"
+        "picture  profile       quiz"
+        "picture  .             .";
     }
 }
 
-@media(min-width:1660px) {
-    .proyectos_grid {
-        height: 800px;
-    }
-    .images {
-        width: 32%;
+
+/****************
+GRID-LAYOUT
+*****************/
+.pastry {
+    grid-area: pastry;
+    align-self: center;
+}
+.chat {
+    grid-area: chat;
+}
+.quiz {
+    grid-area: quiz;
+}
+.picture {
+    grid-area: picture;
+    align-self: center;
+}
+.supplies {
+    grid-area: supplies;
+}
+.profile {
+    grid-area: profile;
+}
+.color_picker {
+    grid-area: color_picker;
+}
+.tenzies {
+    grid-area: tenzies;
+}
+
+@media(min-width:900px){
+    .picture {
+        align-self: start;
     }
 }
