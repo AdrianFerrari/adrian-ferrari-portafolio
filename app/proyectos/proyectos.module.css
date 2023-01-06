@@ -4,19 +4,24 @@
 }
 
 .proyectos_grid {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: space-between;
-    justify-content: flex-start;
-    row-gap: 10px;
-    height: 180vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "chat     tenzies"
+        "chat     pastry"
+        "supplies pastry"
+        "supplies color_picker"
+        "quiz     profile"
+        "picture  profile"
+        "picture  .";
     width: 100%;
-    margin: auto;
+    gap: 10px;
+    margin: 40px auto;
 }
 
 .images {
-    width: 46%;
-    height: fit-content;
+    width: 100%;
+    height: auto;
     display: block;
     object-fit: contain;
     border-radius: 5px;
@@ -26,17 +31,93 @@
     border: 1px dotted var(--gold);
 }
 
-@media(min-width:660px) {
+@media(min-width:900px) {
     .proyectos_grid {
-        height: calc((100vw / 660 * 806) + 30);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: min-content;
+        grid-template-areas: 
+        "chat     tenzies       supplies"
+        "chat     pastry        supplies"
+        "quiz     pastry        profile"
+        "picture  color_picker  profile"
+        "picture  .             .";
     }
 }
 
-@media(min-width:1660px) {
+@media(min-width:1240px) {
     .proyectos_grid {
-        height: 800px;
+        gap: 30px;
+    }
+}
+
+@media(min-width:1370px) {
+    .proyectos_grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "chat  tenzies supplies  picture"
+        "chat  pastry  supplies  picture"
+        "quiz  pastry  profile   color_picker"
+        ".        .    profile   .";
+
     }
     .images {
-        width: 32%;
+        max-width: 288px;
+    }
+}
+
+@media(min-width:1555px) {
+    .proyectos_grid {
+        width: 1237px;
+    }
+}
+
+
+/****************
+GRID-LAYOUT
+*****************/
+.pastry {
+    grid-area: pastry;
+}
+.chat {
+    grid-area: chat;
+}
+.quiz {
+    grid-area: quiz;
+}
+.pics {
+    grid-area: picture;
+    align-self: center;
+}
+.supplies {
+    grid-area: supplies;
+}
+.profile {
+    grid-area: profile;
+}
+.color_picker {
+    grid-area: color_picker;
+}
+.tenzies {
+    grid-area: tenzies;
+}
+
+@media(min-width:900px){
+    .pics {
+        align-self: start;
+    }
+    .color_picker {
+        margin-top: -50px;
+    }
+}
+
+@media(min-width:1240px) {
+    .color_picker {
+        margin-top: -100px;
+    }
+}
+
+@media(min-width:1370px) {
+    .color_picker {
+        margin-top: -140px;
     }
 }

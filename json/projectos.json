@@ -1,0 +1,66 @@
+[
+        {
+            "title": "Pastry Shop",
+            "id": "pastry",
+            "description": "Mock of an cake shop e-commerce page\n\nTechnologies used:\n- React-Redux\n- React-Reuter\n- Express\n- Nodejs\n- Cypress",
+            "screenshots": ["pastry_shop_home", "pastry_shop_productos", "pastry_shop_cart"],
+            "github_link": "https://github.com/AdrianFerrari/e-comm-pastry-shop",
+            "web_link": "e-comm-pastry-shop.up.railway.app/"
+        },
+        {
+            "title": "Chat App",
+            "id": "chat",
+            "description":"Simple app for signup login and posting comments on a thread.\n\nTechnologies used:\n- ReactJS\n- useContext\n- react-router\n- axios\n- nodejs\n- express\n- mogoose\nJWT for authorization and authentication\nCypress for CI testing\nIt implement CRUD methods for the user account and the comments posted.",
+            "screenshots": ["chat_app"],
+            "github_link": "https://github.com/AdrianFerrari/login-chat-app",
+            "web_link": "login-chat-app-production.up.railway.app/"
+        },
+        {
+            "title": "Trivia Quiz App",
+            "id": "quiz",
+            "description": "This is a solo project from the Scrimba course on React.\n\nThe app fetch 5 questions from https://opentdb.com/ API.\n\nIt keep track of the correct and incorrect answers of each question in a state and calculate your final score.",
+            "screenshots": ["quiz_app", "quiz_app1", "quiz_app2"],
+            "github_link": "https://github.com/AdrianFerrari/trivia-quiz-game",
+            "web_link": ""
+        },
+        {
+            "title": "Picture Shop",
+            "id": "pics",
+            "description": "This project is a React practice project that simulates a shop that sell pictures\n\nLibraries used:\n- react-routes\n- useContext\n- custom hooks",
+            "screenshots": ["pics_shop", "pics_shop_cart"],
+            "github_link": "https://github.com/AdrianFerrari/picture-shop",
+            "web_link": ""
+        },
+        {
+            "title": "Supplies Database Manager",
+            "id": "supplies",
+            "description": "App than can use CRUD methods to manipulate a mongo data base",
+            "screenshots": ["supplies_crud"],
+            "github_link": "https://github.com/AdrianFerrari/supplies-crud-mongo",
+            "web_link": ""
+        },
+        {
+            "title": "Profile Card",
+            "id": "profile",
+            "description": "This is a static digital profile card. It's part of a scrimba react course challenge.\n\nTechnologies used:\n- HTML\n- CSS\n- Javascript\n- React",
+            "screenshots": ["profile_card"],
+            "github_link": "https://github.com/AdrianFerrari/profile-card-react",
+            "web_link": ""
+        },
+        {
+            "title": "Color Picker",
+            "id": "color_picker",
+            "description": "It's a solo project from a scrimba course. You pick an color from the color picker a theme from a dropdown menu and send a request to the site https://www.thecolorapi.com/ for an object with 5 colors, we then paint the columns with them.",
+            "screenshots": ["color_picker"],
+            "github_link": "https://github.com/AdrianFerrari/color-picker",
+            "web_link": ""
+        },
+        {
+            "title": "Tenizes Game",
+            "id": "tenzies",
+            "description": "Roll the dices until every dice is the same. Click on any dice to freeze it.",
+            "screenshots": ["tenzies"],
+            "github_link": "https://github.com/AdrianFerrari/tenzies-game",
+            "web_link": ""
+        }
+]

@@ -2,6 +2,7 @@
 import style from "./header.module.css"
 import profile_pic from "../../public/profile-img.jpeg"
 import Image from "next/image"
+import Link from "next/link"
 import HomeSVG from "../../public/icons/home.svg"
 import AboutSVG from "../../public/icons/user.svg"
 import TrajectoSVG from "../../public/icons/route.svg"
@@ -23,14 +24,14 @@ export default function Header() {
                 <p>Desarrolador Web</p>
             </div>
             <nav className={style.nav_links}>
-                <a><HomeSVG classname={style.icon}/><span>HOME</span></a>
-                <a><AboutSVG/><span>ACERCA DE MI</span></a>
-                <a><TrajectoSVG/><span>TRAJECTO DE APRENDIZAJE</span></a>
-                <a href="/proyectos">
+                <Link className={style.link} href="#"><HomeSVG classname={style.icon}/><span>HOME</span></Link>
+                <Link className={style.link} href="#"><AboutSVG/><span>ACERCA DE MI</span></Link>
+                <Link className={style.link} href="#"><TrajectoSVG/><span>TRAJECTO DE APRENDIZAJE</span></Link>
+                <Link className={style.link} href="/proyectos">
                     <ProjectosSVG classname={style.icon} />
                     <span>PROJECTOS</span>
-                </a>
-                <a><ContactoSVG/><span>CONTACTO</span></a>
+                </Link>
+                <Link className={style.link} href="#"><ContactoSVG/><span>CONTACTO</span></Link>
             </nav>
         </header>
     )
