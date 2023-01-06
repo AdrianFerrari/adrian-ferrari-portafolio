@@ -5,19 +5,18 @@
 
 .proyectos_grid {
     display: grid;
-    grid-auto-flow: row dense;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-        "chat     chat"
-        "pastry   tenzies"
-        "pastry   profile"
+        "chat     tenzies"
+        "chat     pastry"
+        "supplies pastry"
+        "supplies color_picker"
+        "quiz     profile"
         "picture  profile"
-        "picture  color_picker"
-        "supplies supplies"
-        "quiz     .";
+        "picture  .";
     width: 100%;
     gap: 10px;
-    margin: auto;
+    margin: 40px auto;
 }
 
 .images {
@@ -37,11 +36,38 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: min-content;
         grid-template-areas: 
-        "chat     chat          tenzies"
-        "pastry   supplies      supplies"
-        "pastry   profile       color_picker"
-        "picture  profile       quiz"
+        "chat     tenzies       supplies"
+        "chat     pastry        supplies"
+        "quiz     pastry        profile"
+        "picture  color_picker  profile"
         "picture  .             .";
+    }
+}
+
+@media(min-width:1240px) {
+    .proyectos_grid {
+        gap: 30px;
+    }
+}
+
+@media(min-width:1370px) {
+    .proyectos_grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "chat  tenzies supplies  picture"
+        "chat  pastry  supplies  picture"
+        "quiz  pastry  profile   color_picker"
+        ".        .    profile   .";
+
+    }
+    .images {
+        max-width: 288px;
+    }
+}
+
+@media(min-width:1555px) {
+    .proyectos_grid {
+        width: 1237px;
     }
 }
 
@@ -51,7 +77,6 @@ GRID-LAYOUT
 *****************/
 .pastry {
     grid-area: pastry;
-    align-self: center;
 }
 .chat {
     grid-area: chat;
@@ -59,7 +84,7 @@ GRID-LAYOUT
 .quiz {
     grid-area: quiz;
 }
-.picture {
+.pics {
     grid-area: picture;
     align-self: center;
 }
@@ -77,7 +102,22 @@ GRID-LAYOUT
 }
 
 @media(min-width:900px){
-    .picture {
+    .pics {
         align-self: start;
+    }
+    .color_picker {
+        margin-top: -50px;
+    }
+}
+
+@media(min-width:1240px) {
+    .color_picker {
+        margin-top: -100px;
+    }
+}
+
+@media(min-width:1370px) {
+    .color_picker {
+        margin-top: -140px;
     }
 }
