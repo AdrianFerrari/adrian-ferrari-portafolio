@@ -26,9 +26,10 @@ export default function Proyectos() {
     if (isLoading) return <div>Loading...</div>
 
     const proyectsData = JSON.parse(data)
+    console.log(proyectsData)
     const dataHTML = proyectsData.map((item, i) => {
         return(
-            <ProjectModalCard key={i} {...item}/>
+            <ProjectModalCard className={style.item?.id} key={i} {...item}/>
         )
     })
     
@@ -38,55 +39,60 @@ export default function Proyectos() {
             <h1>PROYECTOS</h1>
             <hr/>
             <div className={style.proyectos_grid}>
-                <Image 
-                    className={[style.images, style.pastry].join(" ")}
-                    src={pastry_shop_home}
-                    alt="pastry shop"
-                    placeholder="blur"
-                />
-                <Image 
-                    className={[style.images, style.chat].join(" ")}
-                    src={chat_app}
-                    alt="chat app"
-                    placeholder="blur"
-                />
-                <Image 
-                    className={[style.images, style.quiz].join(" ")}
-                    src={quiz_app}
-                    alt="quiz app"
-                    placeholder="blur"
-                />
-                <Image 
-                    className={[style.images, style.pics].join(" ")}
-                    src={pics_shop}
-                    alt="pictures shop"
-                    placeholder="blur"
-                />
-                <Image 
-                    className={[style.images, style.supplies].join(" ")}
-                    src={supplies_crud}
-                    alt="supplies crud app"
-                    placeholder="blur"
-                />
-                <Image 
-                    className={[style.images, style.profile].join(" ")}
-                    src={profile_card}
-                    alt="profile card"
-                    placeholder="blur"
-                />
-                <Image 
-                    className={[style.images, style.color_picker].join(" ")}
-                    src={color_picker}
-                    alt="color picker"
-                    placeholder="blur"
-                />
-                <Image 
-                    className={[style.images, style.tenzies].join(" ")}
-                    src={tenzies}
-                    alt="tenzies game"
-                    placeholder="blur"
-                />
+                {dataHTML}
             </div>
         </div>
     )
 } 
+
+/*
+<Image 
+    className={[style.images, style.pastry].join(" ")}
+    src={pastry_shop_home}
+    alt="pastry shop"
+    placeholder="blur"
+/>
+<Image 
+    className={[style.images, style.chat].join(" ")}
+    src={chat_app}
+    alt="chat app"
+    placeholder="blur"
+/>
+<Image 
+    className={[style.images, style.quiz].join(" ")}
+    src={quiz_app}
+    alt="quiz app"
+    placeholder="blur"
+/>
+<Image 
+    className={[style.images, style.pics].join(" ")}
+    src={pics_shop}
+    alt="pictures shop"
+    placeholder="blur"
+/>
+<Image 
+    className={[style.images, style.supplies].join(" ")}
+    src={supplies_crud}
+    alt="supplies crud app"
+    placeholder="blur"
+/>
+<Image 
+    className={[style.images, style.profile].join(" ")}
+    src={profile_card}
+    alt="profile card"
+    placeholder="blur"
+/>
+<Image 
+    className={[style.images, style.color_picker].join(" ")}
+    src={color_picker}
+    alt="color picker"
+    placeholder="blur"
+/>
+<Image 
+    className={[style.images, style.tenzies].join(" ")}
+    src={tenzies}
+    alt="tenzies game"
+    placeholder="blur"
+/>
+
+*/

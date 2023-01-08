@@ -19,13 +19,13 @@
     margin: 40px auto;
 }
 
-.images {
+/* .images {
     width: 100%;
     height: auto;
     display: block;
     object-fit: contain;
     border-radius: 5px;
-}
+} */
 
 .proyectos > hr {
     border: 1px dotted var(--gold);
@@ -60,9 +60,6 @@
         ".        .    profile   .";
 
     }
-    .images {
-        max-width: 288px;
-    }
 }
 
 @media(min-width:1555px) {
@@ -75,7 +72,7 @@
 /****************
 GRID-LAYOUT
 *****************/
-.pastry {
+/* .pastry {
     grid-area: pastry;
 }
 .chat {
@@ -120,4 +117,4 @@ GRID-LAYOUT
     .color_picker {
         margin-top: -140px;
     }
-}
+} */

@@ -26,7 +26,7 @@ export default function Header() {
             <nav className={style.nav_links}>
                 <Link className={style.link} href="#"><HomeSVG classname={style.icon}/><span>HOME</span></Link>
                 <Link className={style.link} href="#"><AboutSVG/><span>ACERCA DE MI</span></Link>
-                <Link className={style.link} href="#"><TrajectoSVG/><span>TRAJECTO DE APRENDIZAJE</span></Link>
+                <Link className={style.link} href="#"><TrajectoSVG/><span>TECHNOLOGIAS CONOCIDAS</span></Link>
                 <Link className={style.link} href="/proyectos">
                     <ProjectosSVG classname={style.icon} />
                     <span>PROJECTOS</span>
