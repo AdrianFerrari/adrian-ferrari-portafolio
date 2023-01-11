@@ -26,7 +26,7 @@ export default function Proyectos() {
     
     return(
         <div className={style.proyectos}>
-            <PageHead nombre="PROYECTOS"/>
+            <PageHead nombre="Proyectos"/>
             <div className={style.proyectos_grid}>
                 {
                     dataHTML
