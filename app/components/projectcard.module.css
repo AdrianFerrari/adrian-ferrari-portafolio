@@ -1,0 +1,201 @@
+.project_card {
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    position: relative;
+}
+
+
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    position: relative;
+    z-index: 49;
+}
+
+
+
+/**************
+Info
+**************/
+
+.titleholder {
+    background-color: inherit;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    background-color: inherit;
+    border-radius: 8px 8px 0 0;
+    padding: .5em 1em;
+    z-index: 50;
+}
+
+.info {
+    position: relative;
+    color: var(--white);
+    background-color: inherit;
+    display: flex;
+    bottom: 0;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 1em;
+}
+
+.infowrapper {
+    white-space: pre-wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition-property: visibility, max-height; 
+    transition-duration: 1s; 
+    transition-timing-function: cubic-bezier(0, 1, 0, 1);
+    padding-left: 1em;
+    padding-right: 1em;
+    max-height: 0;
+}
+
+.open {
+    transition-property: visibility, max-height; 
+    transition-duration: 1s; 
+    transition-timing-function: ease-out;
+    max-height: 500px;
+}
+
+.infowrapper p {
+    margin: 0;
+}
+
+/**************
+Show Button
+**************/
+
+.showBtn {
+    padding: .5em 0;
+
+    background-color: inherit;
+    color: var(--white);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 20;
+}
+
+.showtext {
+    margin: 0;
+    grid-area: showtext;
+}
+
+.arrow {
+    grid-area: arrow;
+}
+
+.arrow_up {
+    transform: rotate(0.5turn);
+}
+
+/**************
+Buttons
+**************/
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons a {
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1 1 auto;
+    padding: 1em 0;
+    justify-content: center;
+}
+
+.github {
+    background-color: black;
+}
+
+.website {
+    background-color: royalblue;
+}
+
+
+
+.image, .buttons {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*************
+Backgrounds
+*************/
+
+.pastry {
+    background-color: var(--blue);
+}
+
+.chat {
+    background-color: var(--purple);
+}
+
+.quiz {
+    background-color: var(--dark-green);
+}
+
+.pics {
+    background-color: var(--dark-red);
+}
+
+.supplies {
+    background-color: var(--cyan);
+}
+
+.color_picker {
+    background-color: var(--green);
+}
+
+.tenzies {
+    background-color: var(--dark-cyan);
+}
+
+.chat > .image {
+    padding: 40px;
+}
+
+/*************
+Media Queries
+*************/
+
+@media(min-width: 500px) {
+    .chat > .image {
+        padding: 20px;
+    }
+}
+
+@media(min-width: 660px) {
+    .buttons {
+        display: flex;
+        justify-content: space-around;
+        padding: 1em 1em;
+        gap: 5px;
+    }
+    .buttons a {
+        padding: .5em 1.2em;
+        border-radius: 6px;
+    }
+}
+
+@media(min-width: 1000px) {
+    .image {
+        padding: 30px;
+    }
+}

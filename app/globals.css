@@ -1,9 +1,26 @@
 :root{
-    --dark: #533747;
-    --font-light: #cce1e2;
-    --font-dark: #7c7285;
-    --gold: #f3d83e;
-    --light: #6A6B83;
+    --light: #333333;
+    --light2: #949292;
+    --dark: #1f1f1f;
+    --gold: #cf9f37;
+    --white: #fff;
+    --blue: rgb(43, 43, 66);
+    --blue-light: rgb(63, 63, 100);
+    --purple: rgb(71, 57, 83);
+    --purple-light: rgb(105, 87, 122);
+    --dark-green: rgb(53, 70, 48);
+    --dark-green-light: rgb(105, 129, 87);
+    --dark-red: rgb(66, 40, 40);
+    --dark-red-light: rgb(110, 66, 66);
+    --cyan: rgb(33, 78, 78);
+    --cyan-light: rgb(47, 107, 107);
+    --pink: rgb(92, 54, 77);
+    --pink-light: rgb(109, 71, 94);
+    --green: rgb(46, 73, 46);
+    --green-light: rgb(71, 110, 71);
+    --dark-cyan: rgb(50, 78, 73);
+    --dark-cyan-light: rgb(66, 100, 94);
+
 }
 
 * {
@@ -12,21 +29,28 @@
     box-sizing: border-box;
 }
 
-a {
-    -webkit-tap-highlight-color:rgba(255, 255, 255, 0.2)
-}
+/* a:active,
+a:focus {
+    color: var(--white);
+} */
 
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
     background-color: var(--light);
-    color: whitesmoke;
+    width: 100vw;
+    color: var(--white);
 }
 
-h1 {
+h2, h3 {
     margin: 0;
     color: var(--gold);
+}
+
+.pages {
+    width: 100%;
+    padding: 30px 50px;
 }
 
 @media(min-width:660px) {

@@ -1,16 +1,18 @@
 import './globals.css'
 import Header from "./components/Header"
-import { Inter } from '@next/font/google';
+import { Raleway } from '@next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+const raleway = Raleway({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={raleway.className}>
       <head />
       <body>
         <Header />
-        {children}
+        <div className="pages">
+          {children}
+        </div>
       </body>
     </html>
   )
