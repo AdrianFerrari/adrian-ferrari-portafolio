@@ -1,1 +1,70 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: center url("../public/rosario.webp") no-repeat;
+    background-size: cover;
+    flex: 1 1 100%;
+    flex-direction: column;
+}
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.nombre {
+    margin-bottom: 0;
+    font-size: 4em;
+    color: var(--dark);
+    text-shadow: 0 0 8px var(--white), 0 0 8px var(--white);
+}
+
+.subtitulo {
+    display: inline-flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 0 0 5px var(--dark), 0 0 5px var(--dark);
+}
+
+.p_first {
+    margin-right: 10px;
+}
+
+.p {
+    overflow: hidden;
+    width: 0px;
+}
+
+.show {
+    animation-duration: 1.5s;
+    animation-name: show;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+
+@keyframes show {
+    0% {
+        width: 0px;
+        display: none;
+    }
+    50% {
+        width: 140px;
+        display: block;
+    }
+    100% {
+        width: 140px;
+        display: block;
+    }
+}
+
+@media(min-width: 660px) {
+    .main {
+    }
+}

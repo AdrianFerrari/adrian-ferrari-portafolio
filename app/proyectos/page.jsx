@@ -18,14 +18,14 @@ export default function Proyectos() {
     const proyectsData = JSON.parse(data)
     const dataHTML = proyectsData.map((item, i) => {
         return(
-            <div key={i} className={style[item.id] + " " + style.card}>
+            <div key={i} className={style.card}>
                 <ProjectCard {...item}/>
             </div>
         )
     })
     
     return(
-        <div className={style.proyectos}>
+        <div className="page_container">
             <PageHead nombre="Proyectos"/>
             <div className={style.proyectos_grid}>
                 {

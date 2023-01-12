@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import style from "./projectcard.module.css";
+import style from "./styles/projectcard.module.css";
 import React from "react";
 import he from "he";
 import GlobalSVG from "../../public/icons/global.svg";

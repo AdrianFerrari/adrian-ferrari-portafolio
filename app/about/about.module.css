@@ -1,0 +1,121 @@
+.about {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    grid-template-areas: 
+    "bio"
+    "pregunta"
+    "educacion";
+}
+
+.educacion_container {
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    margin: 0 auto;
+    grid-area: educacion;
+}
+
+.educacion_container h2 {
+    margin-bottom: 1em;
+}
+
+.educacion_seccion {
+    border-top: 2px solid var(--gold);
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.educacion_info {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.educacion_info h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.educacion_info p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.year_top {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(-46px, -10px);
+    width: 51px;
+}
+.year_top::after {
+    content: "\25C9";
+    color: var(--gold);
+}
+.year_bottom {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: translate(46px, -10px);
+    width: 51px;
+}
+.year_bottom::before {
+    content: "\25C9";
+    color: var(--gold);
+}
+
+
+.bio {
+    grid-area: bio;
+    margin-right: 30px;
+}
+
+.pregunta_estudio {
+    grid-area: pregunta;
+}
+
+.grey {
+    color: var(--light2);
+}
+
+@media(min-width:830px) {
+    .about {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "bio bio educacion"
+        "bio bio educacion"
+        "pregunta pregunta pregunta";
+    }
+    
+}
+
+@media(min-width:660px) {
+
+    .educacion_container {
+        margin-left: 50px;
+    }
+
+    .educacion_seccion {
+        border-left: 2px solid var(--gold);
+        border-top: none;
+    }
+    .year_top {
+        position: relative;
+        transform: translate(-46px, -10px);
+    }
+    .year_bottom {
+        position: relative;
+        top: initial;
+        right: initial;
+        bottom: 0px;
+        left: 0px;
+        transform: translate(-46px, 10px);
+    }
+    .year_bottom::before {
+        content: "";
+    }
+    .year_bottom::after {
+        content: "\25C9";
+        color: var(--gold);
+    }
+}

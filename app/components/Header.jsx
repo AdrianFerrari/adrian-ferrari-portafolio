@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
-import style from "./header.module.css";
+import style from "./styles/header.module.css";
 import profile_pic from "../../public/profile-img.jpeg";
 import Image from "next/image";
 import Link from "next/link";
@@ -30,26 +30,27 @@ export default function Header() {
                     alt="profile"
                 />
                 <h1>Adrian Ferrari</h1>
+                <p>Portafolio</p>
             </div>
             <nav className={style.nav_links}>
                 <Link className={(activeLink === "/" && style.focused) + " " + style.link} href="/">
-                    <HomeSVG />
+                    <HomeSVG className={style.icon} />
                     <span>HOME</span>
                 </Link>
                 <Link className={(activeLink === "/about" && style.focused) + " " + style.link} href="/about">
-                    <AboutSVG />
-                    <span>ACERCA DE MI</span>
+                    <AboutSVG className={style.icon} />
+                    <span>SOBRE MI</span>
                 </Link>
-                <Link className={(activeLink === "/rutacarrera" && style.focused) + " " + style.link} href="/rutacarrera">
-                    <TrajectoSVG />
-                    <span>RUTA DE APRENDIZAJE</span>
+                <Link className={(activeLink === "/competencias" && style.focused) + " " + style.link} href="/competencias">
+                    <TrajectoSVG className={style.icon} />
+                    <span>COMPETENCIAS</span>
                 </Link>
                 <Link className={(activeLink === "/proyectos" && style.focused) + " " + style.link} href="/proyectos">
-                    <ProjectosSVG />
+                    <ProjectosSVG className={style.icon} />
                     <span>PROJECTOS</span>
                 </Link>
                 <Link className={(activeLink === "/contacto" && style.focused) + " " + style.link} href="/contacto">
-                    <ContactoSVG />
+                    <ContactoSVG className={style.icon} />
                     <span>CONTACTO</span>
                 </Link>
             </nav>

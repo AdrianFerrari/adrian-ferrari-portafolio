@@ -1,7 +1,3 @@
-/* .proyectos {
-    width: 100%;
-    padding: 30px 50px;
-} */
 
 .proyectos_grid {
     column-count: 1;
@@ -11,7 +7,7 @@
 }
 
 .card {
-    height: 100%;
+    height: auto;
     width: auto;
     border-radius: 7px;
     overflow: hidden;
@@ -31,11 +27,5 @@ Media Queries
 @media(min-width:1000px) {
     .proyectos_grid {
         column-count: 3;
-    }
-}
-
-@media(min-width:1555px) {
-    .proyectos_grid {
-        width: 1237px;
     }
 }

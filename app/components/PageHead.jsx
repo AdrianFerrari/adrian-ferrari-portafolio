@@ -1,4 +1,4 @@
-import style from "./pagehead.module.css"
+import style from "./styles/pagehead.module.css"
 
 export default function pageHead({nombre}) {
     return (

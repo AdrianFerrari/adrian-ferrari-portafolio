@@ -1,0 +1,47 @@
+
+.main_title {
+    margin-bottom: 20px;
+}
+
+.contenedor_listas {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.listas {
+    color: var(--white);
+}
+
+.listas,
+.listas li,
+.listas ul {
+    break-inside: avoid-column;
+}
+
+.listas ul {
+    margin-top: 0;
+}
+
+.listas li::marker {
+    color: var(--gold);
+}
+
+.title {
+    text-decoration: 2px underline var(--gold);
+    margin: 0;
+}
+
+
+
+@media(min-width: 955px) {
+    .contenedor_listas {
+        column-count: 2;
+        column-gap: 2rem;
+    }
+}
+
+@media(min-width: 1340px) {
+    .listas {
+        column-count: 2;
+    }
+}
