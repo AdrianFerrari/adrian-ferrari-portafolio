@@ -28,12 +28,13 @@ export default function Header() {
                     className={style.image}
                     src={profile_pic}
                     alt="profile"
+                    priority
                 />
                 <h1>Adrian Ferrari</h1>
                 <p>Portafolio</p>
             </div>
             <nav className={style.nav_links}>
-                <Link className={(activeLink === "/" && style.focused) + " " + style.link} href="/">
+                <Link className={(activeLink === "/home" && style.focused) + " " + style.link} href="/">
                     <HomeSVG className={style.icon} />
                     <span>HOME</span>
                 </Link>

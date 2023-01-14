@@ -4,9 +4,8 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background: center url("../public/rosario.webp") no-repeat;
+    background: center url("../../public/rosario.webp") no-repeat;
     background-size: cover;
-    flex: 1 1 100%;
     flex-direction: column;
 }
 
@@ -61,10 +60,5 @@
     100% {
         width: 140px;
         display: block;
-    }
-}
-
-@media(min-width: 660px) {
-    .main {
     }
 }

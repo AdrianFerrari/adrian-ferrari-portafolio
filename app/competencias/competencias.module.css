@@ -8,6 +8,16 @@
     width: 100%;
 }
 
+.contenedor_listas h2 {
+    color: var(--white);
+    text-decoration: 2px underline var(--gold);
+}
+
+.contenedor_listas h4 {
+    font-weight: normal;
+    color: var(--gold);
+}
+
 .listas {
     color: var(--white);
 }
@@ -18,8 +28,9 @@
     break-inside: avoid-column;
 }
 
-.listas ul {
+.listas > ul {
     margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .listas li::marker {
@@ -27,10 +38,9 @@
 }
 
 .title {
-    text-decoration: 2px underline var(--gold);
+    font-size: 1.2em;
     margin: 0;
 }
-
 
 
 @media(min-width: 955px) {

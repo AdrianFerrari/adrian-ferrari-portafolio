@@ -1,0 +1,133 @@
+.contacto {
+    height: 100%;
+    margin-top: 40px;
+}
+
+
+.form {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr fit-content;
+    gap: 30px;
+    grid-template-areas: 
+    "nombre"
+    "email"
+    "mensaje"
+    "button";
+}
+
+.form > div {
+    position: relative;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    font-size: 1em;
+    font-family: inherit;
+    padding: .4em;
+    background-color: var(--dark);
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+.form textarea {
+    height: 100%;
+    resize: none;
+}
+.form label {
+    margin-left: .4em;
+    position: absolute;
+    transition: transform .3s ease-out;
+    left: 0px;
+    top: .4em;
+    transform: translateY(-160%);
+}
+
+.form input[value = ""] ~ label,
+.form textarea:placeholder-shown ~ label {
+    transform: translateY(0%);
+}
+
+.form input:focus ~ label,
+.form textarea:focus ~ label {
+    transform: translateY(-160%);
+}
+
+.form_btn {
+    width: 200px;
+    height: 55px;
+    text-align: center;
+    background-color: transparent;
+    color: var(--gold);
+    border: 3px solid var(--gold);
+    font-size: 1.1em;
+    cursor: pointer;
+    margin: 0 auto;
+    grid-area: button;
+    position: relative;
+    z-index: 1;
+    /* transition: backgroundColor 0s 1s; */
+    transition: background-color .3s, color .3s;
+}
+
+.form_btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: var(--gold);
+    transition: width .3s, ;
+}
+
+.form_btn:hover {
+    color: var(--light) !important;
+}
+.form_btn:hover:before {
+    width: 100%;
+}
+
+.nombre {
+    grid-area: nombre;
+}
+
+.email {
+    grid-area: email;
+}
+
+.mensaje {
+    grid-area: mensaje;
+}
+
+.contacto_links {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.contacto_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--gold);
+}
+.icon {
+    color: var(--gold);
+    width: 60px;
+    height: 60px;
+}
+
+@media(min-width:500px) {
+    .form {
+        grid-template-rows: 1fr fit-content;
+        grid-template-areas: 
+        "nombre email"
+        "mensaje mensaje"
+        "button button";
+    }
+}

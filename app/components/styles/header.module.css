@@ -62,6 +62,10 @@
     display: none;
 }
 
+.icon {
+    width: 24px;
+    height: 24px;
+}
 
 @media(min-width:660px) {
     .header {

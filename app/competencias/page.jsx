@@ -3,7 +3,7 @@ import PageHead from "../components/PageHead";
 
 export default function competencias() {
     return (
-        <div className="page_container">
+        <main className="page_container">
             <PageHead nombre="Competencias" />
             <main className={style.contenedor_listas}>
                 <section>
@@ -18,7 +18,7 @@ export default function competencias() {
                             <li>C</li>
                             <li>C++</li>
                         </ul>
-                        <br />
+
                         <h4 className={style.title}>
                             Estructura de Datos y Algoritmos
                         </h4>
@@ -29,7 +29,7 @@ export default function competencias() {
                             <li>Induccion</li>
                             <li>Monoides</li>
                         </ul>
-                        <br />
+
                         <h4 className={style.title}>
                             Arquitectura de las Computadoras
                         </h4>
@@ -55,7 +55,7 @@ export default function competencias() {
                             </li>
                             <li>Segmentacion</li>
                         </ul>
-                        <br />
+
                         <h4 className={style.title}>Talleres</h4>
                         <ul>
                             <li>Java</li>
@@ -63,12 +63,12 @@ export default function competencias() {
                             <li>MySQL</li>
                             <li>HTML y CSS</li>
                         </ul>
-                        <br />
+
                         <h4 className={style.title}>Teoria de Lenguajes</h4>
                         <ul>
                             <li>Compiladores</li>
                         </ul>
-                        <br />
+
                         <h4 className={style.title}>Sistemas Operativos</h4>
                         <ul>
                             <li>Kernel</li>
@@ -78,7 +78,7 @@ export default function competencias() {
                             <li>File Systems</li>
                             <li>Threads</li>
                         </ul>
-                        <br />
+
                         <h4 className={style.title}>Redes</h4>
                         <ul>
                             <li>Protocolos</li>
@@ -86,6 +86,7 @@ export default function competencias() {
                             <li>Topologias</li>
                             <li>Modelo OSI</li>
                         </ul>
+
                     </div>
                 </section>
 
@@ -130,6 +131,6 @@ export default function competencias() {
                     </div>
                 </section>
             </main>
-        </div>
+        </main>
     );
 }

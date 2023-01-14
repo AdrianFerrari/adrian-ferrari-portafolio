@@ -2,8 +2,8 @@
         {
             "title": "Pastry Shop",
             "id": "pastry",
-            "description": "Mock of an cake shop e-commerce page.",
-            "extra_description": "Technologies used:\n&#8226; React-Redux\n&#8226; React-Reuter\n&#8226; Express\n&#8226; Nodejs\n&#8226; Cypress",
+            "description": "Una pagina de una e-tienda de tortas ficticia.",
+            "tags": ["reactjs", "react-redux", "react-router", "express", "nodejs", "cypress"],
             "screenshots": ["pastry_shop", "pastry_shop_home", "pastry_shop_productos", "pastry_shop_cart"],
             "links": [
                 {
@@ -19,8 +19,8 @@
         {
             "title": "Chat App",
             "id": "chat",
-            "description":"Simple app for signup login and posting comments on a thread.\nIt implement CRUD methods for the user account and the comments posted",
-            "extra_description": "Technologies used:\n&#8226; ReactJS:\n&#9;&#9702; useContext\n&#9;&#9702; react-router\n&#9;&#9702; axios\n&#8226; nodejs\n&#8226; express\n&#8226; mongoose\n&#8226; Json web tokens\n&#8226; Cypress for CI testing",
+            "description":"Una pagina simple que permite crear una cuenta y comentar en un hilo.\nImplementa metodos CRUD para la cuenta de usuario y permitir publicar, editar y borrar comentarios",
+            "tags": ["reactjs", "useContext", "react-router", "axios", "express", "mongoose", "nodejs", "jwt", "cypress"],
             "screenshots": ["chat_app"],
             "links": [
                 {
@@ -36,8 +36,8 @@
         {
             "title": "Trivia Quiz App",
             "id": "quiz",
-            "description": "This is a solo project from the Scrimba course on React.\n\nThe app fetch 5 questions from https://opentdb.com/ API.\n\nIt keep track of the correct and incorrect answers of each question in a state and calculate your final score.",
-            "extra_description": "",
+            "description": "Es un solo proyecto del curso de Scrimba.\n\nEl app hace un fetch de 5 preguntas de https://opentdb.com/ API.\n\nUna ves respondidas todas las preguntas muesta el puntaje de las respuestas correctas e incorrectas.",
+            "tags": ["javascript"],
             "screenshots": ["quiz_app", "quiz_app1", "quiz_app2"],
             "links": [
                 {
@@ -49,8 +49,8 @@
         {
             "title": "Picture Shop",
             "id": "pics",
-            "description": "This project is a React practice project that simulates a shop that sell pictures.",
-            "extra_description": "Libraries used:\n&#8226; React-routes\n&#8226; useContext\n&#8226; Custom hooks",
+            "description": "Este es un projecto de practica de React que simula una tienda de fotos.",
+            "tags": ["reactjs", "react-router", "useContext", "custom hooks"],
             "screenshots": ["pics_shop", "pics_shop_cart"],
             "links": [
                 {
@@ -62,8 +62,8 @@
         {
             "title": "Supplies Database Manager",
             "id": "supplies",
-            "description": "App than can use CRUD methods to manipulate a mongo data base",
-            "extra_description": "Technologies used:\n&#8226; React\n&#8226; Mongoose\n&#8226; ExpressJS",
+            "description": "App que usa metodos CRUD para manipular una base de datos",
+            "tags": ["reactjs", "mongoose", "express"],
             "screenshots": ["supplies_crud"],
             "links": [
                 {
@@ -79,8 +79,8 @@
         {
             "title": "Color Picker",
             "id": "color_picker",
-            "description": "It's a solo project from a scrimba course. You pick an color from the color picker a theme from a dropdown menu, send a request to the site https://www.thecolorapi.com/ for an object with 5 colors and then display the colors with their hex codes.",
-            "extra_description": "",
+            "description": "Es un solo projecto del curso de Scrimba. Elejis un color y un tema del menu y mandas un pedido al sitio thecolorapi.com de un objecto con 5 colores, los muestra juntos con sus codigos Hex.",
+            "tags": ["javascript"],
             "screenshots": ["color_picker"],
             "links": [
                 {
@@ -92,8 +92,8 @@
         {
             "title": "Tenizes Game",
             "id": "tenzies",
-            "description": "Roll the dices until every dice is the same. Click on any dice to freeze it.",
-            "extra_description": "",
+            "description": "Roda los dados y congelalos hasta que tengan todos el mismo numero.",
+            "tags": ["javascript"],
             "screenshots": ["tenzies"],
             "links": [
                 {

@@ -1,9 +1,8 @@
 "use client"
-import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Inter } from "@next/font/google";
 import style from "./page.module.css";
-import useInterval from "./utils/useInterval"
+import useInterval from "../utils/useInterval"
 
 const inter = Inter({ subsets: ["latin"] });
 

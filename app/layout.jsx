@@ -9,8 +9,8 @@ export default function RootLayout({ children }) {
     <html lang="en" className={raleway.className}>
       <head />
       <body>
-        <Header />
-          {children}
+        <Header/>
+        {children}
       </body>
     </html>
   )

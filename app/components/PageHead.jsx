@@ -1,6 +1,6 @@
 import style from "./styles/pagehead.module.css"
 
-export default function pageHead({nombre}) {
+export default function PageHead({nombre}) {
     return (
         <>
             <h1 className={style.titulo}>{nombre}</h1>
