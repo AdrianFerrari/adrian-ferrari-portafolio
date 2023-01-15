@@ -1,0 +1,54 @@
+{
+    "facultad": [
+        {
+            "title": "Diseño Orientado a Objetos",
+            "temas": ["Grafos", "Arboles", "C", "C++"]
+        },
+        {
+            "title": "Talleres",
+            "temas": ["Java", "Oracle", "MySQL", "HTML", "CSS", "C"]
+        },
+        {
+            "title": "Estructura de Datos y Algoritmos",
+            "temas": ["Haskell", "Funciones de Orden Superior", "Recursion", "Induccion", "Monoides"]
+        },
+        {
+            "title": "Arquitectura de las Computadoras",
+            "temas": ["Procesador &raquo; Ciclos y Multiciclos", "Lenguaje de Maquinas &raquo; Assembly", "Memoria &raquo; Cache y Memoria Virtual", "Segmentacion"]
+        },
+        {
+            "title": "Teoria de Lenguajes",
+            "temas": ["Compiladores", "Interpreters", "Syntaxis"]
+        },
+        {
+            "title": "Sistemas Operativos",
+            "temas": ["Kernel", "File Systems", "Semaforos", "Procesos", "Shell Script", "Threads"]
+        },
+        {
+            "title": "Redes",
+            "temas": ["Tramas", "Modelo OSI", "Protocolos", "Topologias"]
+        }
+    ],
+    "web": [
+        {
+            "title": "React",
+            "temas": ["Hooks", "React-Router", "useContext", "Redux Toolkit", "Responsive Design", "NextJS"]
+        },
+        {
+            "title": "Databases",
+            "temas": ["MongoDB", "MySQL"]
+        },
+        {
+            "title": "APIs",
+            "temas": ["Authentication &raquo; JWT", "REST", "JSON APIs"]
+        },
+        {
+            "title": "Testing",
+            "temas": ["Unit testing", "Integration testing", "CD/CI con Github Actions", "Jest", "Cypress"]
+        },
+        {
+            "title": "NodeJS",
+            "temas": ["Express"]
+        }
+    ]
+}

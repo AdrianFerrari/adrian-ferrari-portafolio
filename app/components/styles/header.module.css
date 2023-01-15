@@ -3,6 +3,8 @@
     background-color: var(--dark);
     color: var(--light2);
     list-style: none;
+    position: relative;
+    z-index: 10;
 }
 
 .profile_card{

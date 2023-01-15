@@ -1,9 +1,10 @@
 "use client"
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from 'next/navigation';
-import { motion } from "framer-motion"
+import { useState, useEffect } from "react";
 
 export default function Template({ children }) {
+    const paginas = ["/home", "/about", "/competencias", "/proyectos", "/contacto"]
     const pathname = usePathname()
     return (
         <AnimatePresence mode="wait">
