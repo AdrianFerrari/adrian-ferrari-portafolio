@@ -1,5 +1,5 @@
 import './globals.css'
-import Header from "./components/Header"
+import Header from "./(rutas)/components/Header"
 import { Raleway } from '@next/font/google';
 
 const raleway = Raleway({ subsets: ['latin'] })

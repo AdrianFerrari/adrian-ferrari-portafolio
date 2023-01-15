@@ -19,10 +19,7 @@ const nextConfig = {
       use: [{loader: '@svgr/webpack', options: { icon: true }}],
     })
     return config
-  },
-  env: {
-    BASE_URL: 'http://localhost:3000',
-  },
+  }
 }
 
 module.exports = nextConfig

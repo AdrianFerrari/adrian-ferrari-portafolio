@@ -4,10 +4,10 @@ import PageHead from "../components/PageHead";
 import style from "./contacto.module.css";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import MailSVG from "../../public/icons/mail.svg";
-import GithubSVg from "../../public/icons/github.svg";
-import WhatsAppSVG from "../../public/icons/whatsapp.svg";
-import LinkedinSVG from "../../public/icons/linkedin.svg";
+import MailSVG from "public/icons/mail.svg";
+import GithubSVg from "public/icons/github.svg";
+import WhatsAppSVG from "public/icons/whatsapp.svg";
+import LinkedinSVG from "public/icons/linkedin.svg";
 
 function animatingText(reference) {
     refBtn.current.textContent = "Enviando..."

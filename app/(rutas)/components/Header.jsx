@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 import style from "./styles/header.module.css";
-import profile_pic from "../../public/profile-img.jpeg";
+import profile_pic from "public/profile-img.jpeg";
 import Image from "next/image";
 import Link from "next/link";
-import HomeSVG from "../../public/icons/home.svg";
-import AboutSVG from "../../public/icons/user.svg";
-import TrajectoSVG from "../../public/icons/route.svg";
-import ProjectosSVG from "../../public/icons/briefcase.svg";
-import ContactoSVG from "../../public/icons/mail.svg";
+import HomeSVG from "public/icons/home.svg";
+import AboutSVG from "public/icons/user.svg";
+import TrajectoSVG from "public/icons/route.svg";
+import ProjectosSVG from "public/icons/briefcase.svg";
+import ContactoSVG from "public/icons/mail.svg";
 import { useState, useEffect } from "react"
 import { usePathname } from "next/navigation"
 

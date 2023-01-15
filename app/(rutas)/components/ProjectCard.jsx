@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import style from "./styles/projectcard.module.css";
 import he from "he";
-import GlobalSVG from "../../public/icons/global.svg";
-import GitHubSVG from "../../public/icons/github.svg";
+import GlobalSVG from "public/icons/global.svg";
+import GitHubSVG from "public/icons/github.svg";
 
 
 export default function ProjectCard({
@@ -20,7 +20,7 @@ export default function ProjectCard({
         <div className={style.project_card + " " + style[id]}>
             <Image
                 className={style.image}
-                src={require(`../../public/screenshots/${screenshots[0]}.png`)}
+                src={require(`public/screenshots/${screenshots[0]}.png`)}
                 alt={`${id} app`}
                 placeholder="blur"
             />

@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background: center url("../../public/rosario.webp") no-repeat;
+    background: center url("../../../public/rosario.webp") no-repeat;
     background-size: cover;
     flex-direction: column;
 }
