@@ -6,7 +6,9 @@ import { useEffect, useState } from "react";
 let lastIndex = 0
 
 export default function Template({ children }) {
-    const [windowWidth, setWindowWidth] = useState(null)
+    const [windowWidth, setWindowWidth] = useState(() => {
+        if (typeof window !== 'undefined') return window.innerWidth
+    })
     const paginas = ["/home", "/about", "/competencias", "/proyectos", "/contacto"]
     const pathname = usePathname()
     const currentIndex = paginas.indexOf(pathname)
@@ -19,13 +21,13 @@ export default function Template({ children }) {
         const handleWindowResize = () => {
             setWindowWidth(window.innerWidth);
         };
-      
+        handleWindowResize();
         window.addEventListener('resize', handleWindowResize);
       
         return () => {
         window.removeEventListener('resize', handleWindowResize);
         };
-    })
+    }, [])
 
     const deArriba = [{ y: 300, opacity: 0}, { y: 0, opacity: 1}]
     const deAbajo = [{ y: -300, opacity: 0}, { y: 0, opacity: 1}]
