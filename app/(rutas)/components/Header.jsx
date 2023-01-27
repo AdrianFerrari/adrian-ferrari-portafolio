@@ -34,7 +34,7 @@ export default function Header() {
                 <p>Portafolio</p>
             </div>
             <nav className={style.nav_links}>
-                <Link className={(activeLink === "/home" && style.focused) + " " + style.link} href="/">
+                <Link className={(activeLink === "/home" && style.focused) + " " + style.link} href="/home">
                     <HomeSVG className={style.icon} />
                     <span>HOME</span>
                 </Link>
