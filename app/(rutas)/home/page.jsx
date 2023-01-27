@@ -1,10 +1,7 @@
 "use client"
 import { useState } from "react";
-import { Inter } from "@next/font/google";
 import style from "./page.module.css";
 import useInterval from "../utils/useInterval"
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
     const [shownTitle, setShownTitle] = useState("")
