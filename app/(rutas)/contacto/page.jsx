@@ -46,10 +46,10 @@ export default function About() {
     function handleSubmit(event) {
         event.preventDefault();
         emailjs.send(
-            "service_xfu58ct",
-            "template_dzw112l",
+            process.env.NEXT_PUBLIC_SERVICE,
+            process.env.NEXT_PUBLIC_TEMPLATE,
             formData,
-            "B-pMKcaNQZa-6otnF"
+            process.env.NEXT_PUBLIC_EMAILJS_KEY
         );
         setFormData(() => ({
             nombre: "",
