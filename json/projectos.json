@@ -43,6 +43,10 @@
                 {
                     "name": "Github",
                     "link": "https://github.com/AdrianFerrari/trivia-quiz-game"
+                },
+                {
+                    "name": "Website",
+                    "link": "https://stalwart-genie-9e708e.netlify.app/"
                 }
             ]
         },
@@ -86,6 +90,10 @@
                 {
                     "name": "Github",
                     "link": "https://github.com/AdrianFerrari/color-picker"
+                },
+                {
+                    "name": "Website",
+                    "link": "https://whimsical-panda-8a16cc.netlify.app/"
                 }
             ]
         },
@@ -99,6 +107,10 @@
                 {
                     "name": "Github",
                     "link": "https://github.com/AdrianFerrari/tenzies-game"
+                },
+                {
+                    "name": "Website",
+                    "link": "https://scintillating-cupcake-f7a460.netlify.app/"
                 }
             ]
         }
