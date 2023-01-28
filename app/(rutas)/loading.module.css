@@ -7,7 +7,7 @@
     width: 100%;
     min-height: -webkit-calc(100vh - 200px);
     min-height: calc(100vh - 200px);
-    transform: translate(-40px, -40px);
+    /*transform: translate(-40px, -40px);*/
 }
 .lds-ring {
     display: inline-block;
