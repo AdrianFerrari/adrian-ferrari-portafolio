@@ -3,7 +3,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: -webkit-calc(100vh - 200px);
+    min-height: calc(100vh - 200px);
     background: center url("../../../public/rosario.webp") no-repeat;
     background-size: cover;
     flex-direction: column;
@@ -35,7 +36,7 @@
     margin-right: 10px;
 }
 
-.p {
+.p_title {
     overflow: hidden;
     width: 0px;
 }
@@ -60,5 +61,20 @@
     100% {
         width: 140px;
         display: block;
+    }
+}
+
+@media(min-width:660px) {
+    .main {
+        min-height: 100vh;
+    }
+}
+
+@media(max-width: 450px) {
+    .nombre {
+        font-size: 3.3em;
+    }
+    .subtitulo {
+        font-size: 1.3em;
     }
 }

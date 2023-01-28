@@ -21,9 +21,9 @@ export default function Home() {
                 <h1 className={style.nombre}>Adrian Ferrari</h1>
                 <div className={style.subtitulo}>
                     <p className={style.p_first}>Desarrollador</p>
-                    <p className={style.p + " " + (shownTitle === "frontend" ? style.show : "")} style={{color:"orangered"}}>FrontEnd</p>
-                    <p className={style.p + " " + (shownTitle === "backend" ? style.show : "")} style={{color:"lawngreen"}}>BackEnd</p>
-                    <p className={style.p + " " + (shownTitle === "fullstack" ? style.show : "")} style={{color:"gold"}}>FullStack</p>
+                    <p className={style.p_title + " notranslate " + " " + (shownTitle === "frontend" ? style.show : "")} style={{color:"orangered"}}>FrontEnd</p>
+                    <p className={style.p_title + " notranslate " + " " + (shownTitle === "backend" ? style.show : "")} style={{color:"lawngreen"}}>BackEnd</p>
+                    <p className={style.p_title + " notranslate " + " " + (shownTitle === "fullstack" ? style.show : "")} style={{color:"gold"}}>FullStack</p>
                 </div>
             </div>
         </main>
