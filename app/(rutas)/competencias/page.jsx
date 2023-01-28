@@ -13,7 +13,7 @@ async function getData(...args) {
 export default function Competencias() {
     const { data, error, isLoading } = useSWR('/api/competencias', getData);
     if (error) return <div>Failed to load</div>;
-    if (isLoading) return <div>Loading...</div>
+    if (isLoading) return <div className="loading-data-screen"><span>Loading...</span></div>
     const competenciasData = JSON.parse(data)
 
     const listaDesarrolloWeb = competenciasData.web.map((tecnologia) => {

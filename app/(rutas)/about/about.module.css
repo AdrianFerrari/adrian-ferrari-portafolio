@@ -78,6 +78,44 @@
     color: var(--light2);
 }
 
+.download_cv_btn {
+    width: fit-content;
+    padding: .5em 1em;
+    text-align: center;
+    background-color: transparent;
+    color: var(--gold);
+    border: 3px solid var(--gold);
+    font-size: 1.1em;
+    cursor: pointer;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    transition: background-color .3s, color .3s;
+}
+
+.download_cv_btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: var(--gold);
+    transition: width .3s, ;
+}
+
+.download_cv_btn:hover {
+    color: var(--light) !important;
+}
+.download_cv_btn:hover:before {
+    width: 100%;
+}
+.download_cv_btn:active {
+    color: var(--light);
+    background-color: var(--gold);
+}
+
 @media(min-width:830px) {
     .about {
         grid-template-columns: 1fr 1fr 1fr;

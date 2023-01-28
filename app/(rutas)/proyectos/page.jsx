@@ -13,7 +13,7 @@ async function getData(...args) {
 export default function Proyectos() {
     const { data, error, isLoading } = useSWR('/api/projectosdata', getData);
     if (error) return <div>Failed to load</div>;
-    if (isLoading) return <div>Loading...</div>
+    if (isLoading) return <div className="loading-data-screen"><span>Loading...</span></div>
 
     const proyectsData = JSON.parse(data)
     const dataHTML = proyectsData.map((item, i) => {

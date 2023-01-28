@@ -68,7 +68,6 @@
     grid-area: button;
     position: relative;
     z-index: 1;
-    /* transition: backgroundColor 0s 1s; */
     transition: background-color .3s, color .3s;
 }
 

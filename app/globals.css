@@ -63,6 +63,18 @@ hr {
     width: 100%;
 }
 
+.loading-data-screen {
+    display: table;
+    width: 100%;
+    min-height: -webkit-calc(100vh - 200px);
+    min-height: calc(100vh - 200px);
+}
+.loading-data-screen span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
 @media(min-width:660px) {
     body {
         flex-direction: row;
@@ -71,5 +83,8 @@ hr {
     .page_container {
         max-width: 1150px;
         margin: 0 auto;
+    }
+    .loading-data-screen {
+        min-height: 100vh;
     }
 }

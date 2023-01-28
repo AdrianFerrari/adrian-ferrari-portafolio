@@ -1,5 +1,4 @@
 "use client";
-//import axios from "axios"
 import PageHead from "../components/PageHead";
 import style from "./contacto.module.css";
 import { useState, useRef } from "react";
@@ -9,12 +8,6 @@ import GithubSVg from "public/icons/github.svg";
 import WhatsAppSVG from "public/icons/whatsapp.svg";
 import LinkedinSVG from "public/icons/linkedin.svg";
 
-function animatingText(reference) {
-    refBtn.current.textContent = "Enviando..."
-    for(let count=0; count<3; count++) {
-
-    }
-}
 
 export default function About() {
     const refBtn = useRef()

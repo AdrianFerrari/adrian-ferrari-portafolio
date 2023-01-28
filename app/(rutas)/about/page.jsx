@@ -1,6 +1,12 @@
 import PageHead from "../components/PageHead";
 import style from "./about.module.css";
 
+async function getData() {
+    const res = await fetch('/api/getResume')
+    if(!res.ok) throw new Error('Failed to fetch data');
+    return res.json()
+}
+
 export default function About() {
     return (
         <main className="page_container">
@@ -89,6 +95,8 @@ export default function About() {
                         </div>
                         <div className={style.year_bottom}>2022</div>
                     </div>
+
+                    <a className={style.download_cv_btn} href="/adrian-ferrari-cv.pdf" download>Download CV</a>
                 </aside>
             </div>
         </main>
