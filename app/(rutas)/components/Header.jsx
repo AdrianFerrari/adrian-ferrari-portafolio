@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 import style from "./styles/header.module.css";
-import profile_pic from "public/profile-img.jpeg";
+import profile_pic from "public/imagen-perfil.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import HomeSVG from "public/icons/home.svg";
