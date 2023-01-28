@@ -29,11 +29,11 @@ export default function Template({ children }) {
         };
     }, [])
 
-    const deArriba = [{ y: 300, opacity: 0}, { y: 0, opacity: 1}]
-    const deAbajo = [{ y: -300, opacity: 0}, { y: 0, opacity: 1}]
+    const deArriba = [{ y: 300, opacity: 0, scale: 1}, { y: 0, opacity: 1, scale: 1}]
+    const deAbajo = [{ y: -300, opacity: 0, scale: 1}, { y: 0, opacity: 1, scale: 1}]
 
-    const deDerecha = [{ x: 300, opacity: 0}, { x: 0, opacity: 1}]
-    const deIzquierda = [{ x: -300, opacity: 0}, { x: 0, opacity: 1}]
+    const deDerecha = [{ x: 300, opacity: 0, scale: 1}, { x: 0, opacity: 1, scale: 1}]
+    const deIzquierda = [{ x: -300, opacity: 0, scale: 1}, { x: 0, opacity: 1, scale: 1}]
 
     return (
         <motion.div
