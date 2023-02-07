@@ -106,6 +106,10 @@ Backgrounds
     background-color: var(--blue);
 }
 
+.next_auth {
+    background-color: var(--dark-cyan);
+}
+
 .chat {
     background-color: var(--purple);
 }

@@ -2,8 +2,8 @@
         {
             "title": "Pastry Shop",
             "id": "pastry",
-            "description": "Una pagina de una e-tienda de tortas ficticia.",
-            "tags": ["reactjs", "react-redux", "react-router", "express", "nodejs", "cypress"],
+            "description": "Una pagina de una e-tienda de tortas ficticia que permite añadir productos a un carro de compras y manda un email con las compras y el costo total. Usa Cypress para hacer end2end testin y automatic integration tests con github actions.",
+            "tags": ["reactjs", "react-redux", "react-router", "express", "nodejs", "cypress", "cloudinary"],
             "screenshots": ["pastry_shop", "pastry_shop_home", "pastry_shop_productos", "pastry_shop_cart"],
             "links": [
                 {
@@ -13,6 +13,23 @@
                 {
                     "name": "Website",
                     "link": "https://e-pastry-shop.up.railway.app/"
+                }
+            ]
+        },
+        {
+            "title": "Next-auth Signin",
+            "id": "next_auth",
+            "description":"Una app que permite crear una cuenta o ingresar con OAuth con Google o Github como proveedor. Usa NextJS, Next-Auth, Typescript y MongoDB para persistir datos ",
+            "tags": ["nextjs", "next-auth", "typescript", "mongodb", "tailwind"],
+            "screenshots": ["next_auth"],
+            "links": [
+                {
+                    "name": "Github",
+                    "link": "https://github.com/AdrianFerrari/next-auth-signin"
+                },
+                {
+                    "name": "Website",
+                    "link": "https://next-auth-signin.vercel.app/"
                 }
             ]
         },
