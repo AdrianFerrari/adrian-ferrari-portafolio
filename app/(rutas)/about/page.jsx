@@ -19,20 +19,12 @@ export default function About() {
                         formal en el mundo del desarrollo web.
                     </p>
                     <p className={style.grey}>
-                        Me gradue de tecnico electronico en 2006, desde entonces
-                        llevo mas de una decada y media ejerciendo esta
-                        profesion, desde mantenimiento de edificios,
-                        instalaciones electricas, puesto en marcha de grupos
-                        electrogenos, motores y generadores, instalaciones de
-                        alarmas, sistemas telefonicos, etc.
-                    </p>
-                    <p>
                         Ser electricista no tiene una correlacion directa con el
                         mundo del desarrollo de software pero hay muchas
                         habilidades claves que son comunes a ambos sectores y me
                         han servido de mucho en el campo de la programacion.
                     </p>
-                    <p className={style.grey}>
+                    <p>
                         Por ejemplo los electricistas habitualmente trabajamos
                         con sistemas complejos, la capacidad para resolver
                         problemas y la deteccion de fallas son aptitudes
@@ -46,7 +38,7 @@ export default function About() {
                     </p>
                 </section>
 
-                <section className={style.pregunta_estudio}>
+                {/* <section className={style.pregunta_estudio}>
                     <h2>Por que estudio desarrollo web?</h2>
                     <p>
                         Cuando me recibi my primer inclinacion fue estudiar
@@ -62,7 +54,7 @@ export default function About() {
                         experiencia en la matematica, la cual sirvio mucho en
                         mis actuales estudios.
                     </p>
-                </section>
+                </section> */}
 
                 <aside className={style.educacion_container}>
                     <h2>Educacion</h2>
