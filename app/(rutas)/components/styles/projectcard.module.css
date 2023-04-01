@@ -1,68 +1,65 @@
 .project_card {
-    display: flex;
-    flex-direction: column;
-    min-height: fit-content;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: fit-content;
+  position: relative;
 }
-
-
 
 .image {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    position: relative;
-    z-index: 49;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  position: relative;
+  z-index: 49;
 }
-
-
 
 /**************
 Info
 **************/
 
 .titleholder {
-    background-color: inherit;
+  background-color: inherit;
 }
 
 .title {
-    text-align: center;
-    margin-bottom: 0;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -90%);
-    background-color: inherit;
-    border-radius: 8px 8px 0 0;
-    padding: .5em 1em;
-    z-index: 50;
+  text-align: center;
+  margin-bottom: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  background-color: inherit;
+  border-radius: 8px 8px 0 0;
+  padding: 0.5em 1em;
+  z-index: 50;
 }
 
 .info {
-    position: relative;
-    color: var(--white);
-    background-color: inherit;
-    display: flex;
-    bottom: 0;
-    flex-direction: column;
-    overflow: hidden;
-    padding: 1em;
-    gap: 15px;
+  position: relative;
+  color: var(--white);
+  background-color: inherit;
+  display: flex;
+  bottom: 0;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 1em;
+  gap: 15px;
+  white-space: pre-wrap;
 }
 
 .info_tags {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 .info_tag {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: .2em .8em;
-    border-radius: 5px;
-    font-size: .8em;
-    color: var(--gold);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.2em 0.8em;
+  border-radius: 5px;
+  font-size: 0.8em;
+  color: var(--gold);
 }
 
 /**************
@@ -70,99 +67,101 @@ Buttons
 **************/
 
 .buttons {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .buttons a {
-    color: inherit;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    flex: 1 1 auto;
-    padding: 1em 0;
-    justify-content: center;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1 1 auto;
+  padding: 1em 0;
+  justify-content: center;
 }
 
 .github {
-    background-color: black;
+  background-color: black;
 }
 
 .website {
-    background-color: royalblue;
+  background-color: royalblue;
 }
 
-
-
 .image {
-    background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /*************
 Backgrounds
 *************/
 
+.shoe {
+  background-color: var(--dark-red);
+}
+
 .pastry {
-    background-color: var(--blue);
+  background-color: var(--blue);
 }
 
 .next_auth {
-    background-color: var(--dark-cyan);
+  background-color: var(--dark-cyan);
 }
 
 .chat {
-    background-color: var(--purple);
+  background-color: var(--purple);
 }
 
 .quiz {
-    background-color: var(--dark-green);
+  background-color: var(--dark-green);
 }
 
 .pics {
-    background-color: var(--dark-red);
+  background-color: var(--dark-red);
 }
 
 .supplies {
-    background-color: var(--cyan);
+  background-color: var(--cyan);
 }
 
 .color_picker {
-    background-color: var(--green);
+  background-color: var(--green);
 }
 
 .tenzies {
-    background-color: var(--dark-cyan);
+  background-color: var(--dark-cyan);
 }
 
 .chat > .image {
-    padding: 40px;
+  padding: 40px;
 }
 
 /*************
 Media Queries
 *************/
 
-@media(min-width: 500px) {
-    .chat > .image {
-        padding: 20px;
-    }
+@media (min-width: 500px) {
+  .chat > .image {
+    padding: 20px;
+  }
 }
 
-@media(min-width: 660px) {
-    .buttons {
-        display: flex;
-        justify-content: space-around;
-        padding: 1em 1em;
-        gap: 5px;
-    }
-    .buttons a {
-        padding: .5em 1.2em;
-        border-radius: 6px;
-    }
+@media (min-width: 660px) {
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 1em;
+    gap: 5px;
+  }
+  .buttons a {
+    padding: 0.5em 1.2em;
+    border-radius: 6px;
+  }
 }
 
-@media(min-width: 1000px) {
-    .image {
-        padding: 30px;
-    }
+@media (min-width: 1000px) {
+  .image {
+    padding: 30px;
+  }
 }
