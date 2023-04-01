@@ -1,134 +1,151 @@
 [
-        {
-            "title": "Pastry Shop",
-            "id": "pastry",
-            "description": "Una pagina de una e-tienda de tortas ficticia que permite añadir productos a un carro de compras y manda un email con las compras y el costo total. Usa Cypress para hacer end2end testin y automatic integration tests con github actions.",
-            "tags": ["reactjs", "react-redux", "react-router", "express", "nodejs", "cypress", "cloudinary"],
-            "screenshots": ["pastry_shop", "pastry_shop_home", "pastry_shop_productos", "pastry_shop_cart"],
-            "links": [
-                {
-                    "name": "Github",
-                    "link": "https://github.com/AdrianFerrari/e-comm-pastry-shop"
-                },
-                {
-                    "name": "Website",
-                    "link": "https://e-pastry-shop.up.railway.app/"
-                }
-            ]
-        },
-        {
-            "title": "Next-auth Signin",
-            "id": "next_auth",
-            "description":"Una app que permite crear una cuenta o ingresar con OAuth con Google o Github como proveedor. Usa NextJS, Next-Auth, Typescript y MongoDB para persistir datos ",
-            "tags": ["nextjs", "next-auth", "typescript", "mongodb", "tailwind"],
-            "screenshots": ["next_auth"],
-            "links": [
-                {
-                    "name": "Github",
-                    "link": "https://github.com/AdrianFerrari/next-auth-signin"
-                },
-                {
-                    "name": "Website",
-                    "link": "https://next-auth-signin.vercel.app/"
-                }
-            ]
-        },
-        {
-            "title": "Chat App",
-            "id": "chat",
-            "description":"Una pagina simple que permite crear una cuenta y comentar en un hilo.\nImplementa metodos CRUD para la cuenta de usuario y permitir publicar, editar y borrar comentarios",
-            "tags": ["reactjs", "useContext", "react-router", "axios", "express", "mongoose", "nodejs", "jwt", "cypress"],
-            "screenshots": ["chat_app"],
-            "links": [
-                {
-                    "name": "Github",
-                    "link": "https://github.com/AdrianFerrari/login-chat-app"
-                },
-                {
-                    "name": "Website",
-                    "link": "https://login-chat-app-production.up.railway.app/"
-                }
-            ]
-        },
-        {
-            "title": "Trivia Quiz App",
-            "id": "quiz",
-            "description": "Es un solo proyecto del curso de Scrimba.\n\nEl app hace un fetch de 5 preguntas de https://opentdb.com/ API.\n\nUna ves respondidas todas las preguntas muesta el puntaje de las respuestas correctas e incorrectas.",
-            "tags": ["javascript"],
-            "screenshots": ["quiz_app", "quiz_app1", "quiz_app2"],
-            "links": [
-                {
-                    "name": "Github",
-                    "link": "https://github.com/AdrianFerrari/trivia-quiz-game"
-                },
-                {
-                    "name": "Website",
-                    "link": "https://stalwart-genie-9e708e.netlify.app/"
-                }
-            ]
-        },
-        {
-            "title": "Picture Shop",
-            "id": "pics",
-            "description": "Este es un projecto de practica de React que simula una tienda de fotos.",
-            "tags": ["reactjs", "react-router", "useContext", "custom hooks"],
-            "screenshots": ["pics_shop", "pics_shop_cart"],
-            "links": [
-                {
-                    "name": "Github",
-                    "link": "https://github.com/AdrianFerrari/picture-shop"
-                }
-            ]
-        },
-        {
-            "title": "Supplies Database Manager",
-            "id": "supplies",
-            "description": "App que usa metodos CRUD para manipular una base de datos",
-            "tags": ["reactjs", "mongoose", "express"],
-            "screenshots": ["supplies_crud"],
-            "links": [
-                {
-                    "name": "Github",
-                    "link": "https://github.com/AdrianFerrari/supplies-crud-mongo"
-                },
-                {
-                    "name": "Website",
-                    "link": "https://supplies-crud.up.railway.app/"
-                }
-            ]
-        },
-        {
-            "title": "Color Picker",
-            "id": "color_picker",
-            "description": "Es un solo projecto del curso de Scrimba. Elejis un color y un tema del menu y mandas un pedido al sitio thecolorapi.com de un objecto con 5 colores, los muestra juntos con sus codigos Hex.",
-            "tags": ["javascript"],
-            "screenshots": ["color_picker"],
-            "links": [
-                {
-                    "name": "Github",
-                    "link": "https://github.com/AdrianFerrari/color-picker"
-                },
-                {
-                    "name": "Website",
-                    "link": "https://whimsical-panda-8a16cc.netlify.app/"
-                }
-            ]
-        },
-        {
-            "title": "Tenizes Game",
-            "id": "tenzies",
-            "description": "Roda los dados y congelalos hasta que tengan todos el mismo numero.",
-            "tags": ["javascript"],
-            "screenshots": ["tenzies"],
-            "links": [
-                {
-                    "name": "Github",
-                    "link": "https://github.com/AdrianFerrari/tenzies-game"
-                },
-                {
-                    "name": "Website",
-                    "link": "https://scintillating-cupcake-f7a460.netlify.app/"
-                }
-            ]
-        }
+  {
+    "title": "Shoe Shop Invoices",
+    "id": "shoe",
+    "description": "Una app que permite hacer queries a una base de datos de todas las facturas emitidas por una tienda de zapatos. \n\nLa app tiene incluidad en el repo archivos de Dockerfile y docker-compose para poder correr en un solo contenedor la base de datos postgres que se inicializa con un archivo .sql, pgAdmin para administrar y la app misma, con el fin de agilizar el desarrollo y debuggeo.",
+    "tags": ["postgres", "vite", "react", "express", "joi", "docker-container"],
+    "screenshots": ["shoe_sales"],
+    "links": [
+      {
+        "name": "Github",
+        "link": "https://github.com/AdrianFerrari/shoes-sales-invoices"
+      },
+      {
+        "name": "Website",
+        "link": "https://shoes-sales-invoices.up.railway.app/"
+      }
+    ]
+  },
+  {
+    "title": "Pastry Shop",
+    "id": "pastry",
+    "description": "Una pagina de una e-tienda de tortas ficticia que permite añadir productos a un carro de compras y manda un email con las compras y el costo total. \n\nUsa Cypress para hacer end2end testing y automatic integration tests con github actions.",
+    "tags": ["reactjs", "react-redux", "react-router", "express", "nodejs", "cypress", "cloudinary"],
+    "screenshots": ["pastry_shop", "pastry_shop_home", "pastry_shop_productos", "pastry_shop_cart"],
+    "links": [
+      {
+        "name": "Github",
+        "link": "https://github.com/AdrianFerrari/e-comm-pastry-shop"
+      },
+      {
+        "name": "Website",
+        "link": "https://e-pastry-shop.up.railway.app/"
+      }
+    ]
+  },
+  {
+    "title": "Next-auth Signin",
+    "id": "next_auth",
+    "description": "Una app que permite crear una cuenta o ingresar con OAuth con Google o Github como proveedor. Usa NextJS, Next-Auth, Typescript y MongoDB para persistir datos ",
+    "tags": ["nextjs", "next-auth", "typescript", "mongodb", "tailwind"],
+    "screenshots": ["next_auth"],
+    "links": [
+      {
+        "name": "Github",
+        "link": "https://github.com/AdrianFerrari/next-auth-signin"
+      },
+      {
+        "name": "Website",
+        "link": "https://next-auth-signin.vercel.app/"
+      }
+    ]
+  },
+  {
+    "title": "Chat App",
+    "id": "chat",
+    "description": "Una pagina simple que permite crear una cuenta y comentar en un hilo.\n\nImplementa metodos CRUD para la cuenta de usuario y permitir publicar, editar y borrar comentarios",
+    "tags": ["reactjs", "useContext", "react-router", "axios", "express", "mongoose", "nodejs", "jwt", "cypress"],
+    "screenshots": ["chat_app"],
+    "links": [
+      {
+        "name": "Github",
+        "link": "https://github.com/AdrianFerrari/login-chat-app"
+      },
+      {
+        "name": "Website",
+        "link": "https://login-chat-app-production.up.railway.app/"
+      }
+    ]
+  },
+  {
+    "title": "Trivia Quiz App",
+    "id": "quiz",
+    "description": "Es un proyecto tarea del curso de Scrimba.\n\nEl app hace un fetch de 5 preguntas de https://opentdb.com/ API.\n\nUna ves respondidas todas las preguntas muesta el puntaje de las respuestas correctas e incorrectas.",
+    "tags": ["javascript"],
+    "screenshots": ["quiz_app", "quiz_app1", "quiz_app2"],
+    "links": [
+      {
+        "name": "Github",
+        "link": "https://github.com/AdrianFerrari/trivia-quiz-game"
+      },
+      {
+        "name": "Website",
+        "link": "https://stalwart-genie-9e708e.netlify.app/"
+      }
+    ]
+  },
+  {
+    "title": "Picture Shop",
+    "id": "pics",
+    "description": "Este es un projecto de practica de React que simula una tienda de fotos.",
+    "tags": ["reactjs", "react-router", "useContext", "custom hooks"],
+    "screenshots": ["pics_shop", "pics_shop_cart"],
+    "links": [
+      {
+        "name": "Github",
+        "link": "https://github.com/AdrianFerrari/picture-shop"
+      }
+    ]
+  },
+  {
+    "title": "Supplies Database Manager",
+    "id": "supplies",
+    "description": "App que usa metodos CRUD para manipular una base de datos",
+    "tags": ["reactjs", "mongoose", "express"],
+    "screenshots": ["supplies_crud"],
+    "links": [
+      {
+        "name": "Github",
+        "link": "https://github.com/AdrianFerrari/supplies-crud-mongo"
+      },
+      {
+        "name": "Website",
+        "link": "https://supplies-crud.up.railway.app/"
+      }
+    ]
+  },
+  {
+    "title": "Color Picker",
+    "id": "color_picker",
+    "description": "Es un projecto tarea del curso de Scrimba. Elejis un color y un tema del menu y mandas un pedido al sitio thecolorapi.com de un objecto con 5 colores, los muestra juntos con sus codigos Hex.",
+    "tags": ["javascript"],
+    "screenshots": ["color_picker"],
+    "links": [
+      {
+        "name": "Github",
+        "link": "https://github.com/AdrianFerrari/color-picker"
+      },
+      {
+        "name": "Website",
+        "link": "https://whimsical-panda-8a16cc.netlify.app/"
+      }
+    ]
+  },
+  {
+    "title": "Tenizes Game",
+    "id": "tenzies",
+    "description": "Roda los dados y congelalos hasta que tengan todos el mismo numero.",
+    "tags": ["javascript"],
+    "screenshots": ["tenzies"],
+    "links": [
+      {
+        "name": "Github",
+        "link": "https://github.com/AdrianFerrari/tenzies-game"
+      },
+      {
+        "name": "Website",
+        "link": "https://scintillating-cupcake-f7a460.netlify.app/"
+      }
+    ]
+  }
 ]
