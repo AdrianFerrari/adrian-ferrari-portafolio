@@ -13,9 +13,9 @@ export default function Template({ children }) {
   const pathname = usePathname();
   const currentIndex = paginas.indexOf(pathname);
 
-  /* useEffect(() => {
-        lastIndex = paginas.indexOf(pathname)
-    }, [pathname]) */
+  useEffect(() => {
+    lastIndex = paginas.indexOf(pathname);
+  }, [pathname]);
 
   useEffect(() => {
     const handleWindowResize = () => {
