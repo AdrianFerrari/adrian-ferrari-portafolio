@@ -21,8 +21,6 @@ export default function Proyectos() {
     );
 
   const proyectsData = JSON.parse(data);
-  console.log("data", data);
-  console.log("parsedData", proyectsData);
   const dataHTML = proyectsData.map((item, i) => {
     return (
       <div key={i} className={style.card}>
