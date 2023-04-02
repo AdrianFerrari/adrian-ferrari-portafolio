@@ -19,7 +19,7 @@ const nextConfig = {
         headers: [
           {
             key: "Content-Security-Policy",
-            value: "default-src 'self' 'vitals.vercel-insights.com'",
+            value: "default-src 'self' 'https://vitals.vercel-insights.com'",
           },
         ],
       },
