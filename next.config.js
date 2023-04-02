@@ -12,19 +12,6 @@ const nextConfig = {
       },
     ];
   },
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: [
-          {
-            key: "Content-Security-Policy",
-            value: "default-src 'self' 'https://vitals.vercel-insights.com'",
-          },
-        ],
-      },
-    ];
-  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,

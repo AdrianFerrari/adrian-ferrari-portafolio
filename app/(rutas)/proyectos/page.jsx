@@ -1,8 +1,8 @@
 "use client";
 import style from "./proyectos.module.css";
 import useSWR from "swr";
-import ProjectCard from "../components/ProjectCard";
-import PageHead from "../components/PageHead";
+import ProjectCard from "../../components/ProjectCard";
+import PageHead from "../../components/PageHead";
 
 async function getData(...args) {
   const res = await fetch(...args);
